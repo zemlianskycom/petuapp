@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node back/server",
     "server": "nodemon back/server",
-    "dev": "concurrently \"npm run server\""
+    "client": "npm run start --prefix front",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
